@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kişi </title>
+    <style>
+        body {
+            background-color: #F28AB2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .arkaplan {
+            background-color: white;
+            width: 385px;
+            height: 450px;
+            padding: 30px;
+            box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1,
+        h2,
+        p {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            font-weight: 400;
+            font-size: 1.3em;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #555;
+            padding: 0;
+            margin-top: 0;
+            margin-bottom: 0;
+            font-weight: 400;
+            font-size: 1.1em;
+        }
+
+        p {
+            text-align: justify;
+            font-size: 0.8em;
+            font-weight: 280;
+            margin: 0;
+            padding: 0;
+        }
+
+        .button {
+            background-color: #F28AB2;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        .kisi-container {
+            display: flex;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .resim-container {
+            margin-top: 5px;
+            margin-right: 15px;
+            width: 65px;
+            height: 65px;
+            overflow: hidden;
+        }
+
+        .resim-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 80%;
+        }
+
+        .icerik {
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="arkaplan">
+        <h1>Birthdays Today</h1>
+        <div class="liste" id="kisiListesi">
+
+        </div>
+        <button class="button">Clear All</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
